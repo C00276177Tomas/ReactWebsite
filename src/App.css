@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the start of the header */
+  padding: 0 40px;
+}
+
+.welcome {
+  font-size: 120px;
+  font-family: 'Lobster', cursive;
+  margin-right: 40px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column; /* Stack the links vertically */
+  margin-right: 150px;
+}
+
+.social-logo {
+  width: 60px;   /* Adjust the size of the logos as needed */
+  height: 60px;
+  margin-bottom: 10px; /* Add some space between the logos */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 120px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  margin-left: 40px;
+}
+
+.subtitle {
+  font-size: 18px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu {
+  position: fixed; /* Fix the menu position relative to the viewport */
+  top: 10px; /* Adjust the top position as needed */
+  right: 40px; /* Adjust the right position as needed */
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: #444; /* Ensure a visible background color */
+  overflow: hidden; /* Prevent content from overflowing outside the rounded corners */
+}
+
+.menu.show {
+  transform: translateY(0); /* Show the navbar */
+}
+
+.menu.hide {
+  transform: translateY(-200%); /* Hide the navbar */
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  text-align: left;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 20px;
+  display: block;
+  background-color: #444;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+}
+
+main {
+  padding: 20px;
+  margin-left: 40px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1, h2 {
+  color: #333;
+}
